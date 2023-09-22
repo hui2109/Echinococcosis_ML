@@ -1,6 +1,7 @@
 import pandas as pd
 import pickle
 from pathlib import Path
+import numpy as np
 
 # 17676
 # with open('./resources/source_data/finding_list.pkl', 'rb') as f:
@@ -21,23 +22,12 @@ from pathlib import Path
 #     pl = pickle.load(f)
 # print(pl[:5])
 
-df_train = pd.read_csv('./resources/all_images/Groups/train_ids.csv')
-df_val = pd.read_csv('./resources/all_images/Groups/validation_ids.csv')
-df_test = pd.read_csv('./resources/all_images/Groups/test_ids.csv')
-df_total = pd.read_csv('./resources/trim_data/add_ID.csv')
 
-df = pd.concat([df_train, df_val, df_test])
-df_set = set(df['ids'])
-# print(len(df_set))
+A = np.array([1, 2, 3, 4])
+B = np.array([0, 1, 1, 0])
 
-new_id_set = set(df_total['患者新ID'])
-# print(len(new_id_set))
+# 使用布尔索引从A中选择与B中值为1的元素对应的元素
+selected_elements = A[B == 1]
 
-inters = new_id_set.intersection(df_set)
-# print(len(inters))
+print(selected_elements)
 
-diff = new_id_set.difference(df_set)
-with open('./resources/source_data/excluded_ids.csv', 'w', 1, 'utf-8') as f:
-    f.write('ids' + '\n')
-    for i in sorted(diff):
-        f.write(i + '\n')

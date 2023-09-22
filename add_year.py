@@ -28,7 +28,7 @@ def extract_year(url):
     return year
 
 
-df = pd.read_csv('./resources/source_data/data1.csv')
+df = pd.read_csv('resources/source_data/source_data.csv')
 pattern1 = re.compile(r'\\(?P<year>\d{4})年超声图片\\')
 pattern2 = re.compile(r'\\(?P<year>\d{4}|(?P<year1>\d{4})（老系统）|(?P<year2>\d{4})（新系统）)\\')
 pattern3 = re.compile(r'2022年6月8日包虫考核.*?\\(?P<id>\d{1,3})\.jpg')
