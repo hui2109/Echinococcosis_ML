@@ -54,7 +54,7 @@ def image_to_nrrd():
         }
         finding_list.append(group_dict)
 
-    finding_list_pkl = pathlib.Path('./resources/source_data/finding_list.pkl')
+    finding_list_pkl = pathlib.Path('resources/extract_data/finding_list.pkl')
     with open(finding_list_pkl, 'wb') as f:
         pickle.dump(finding_list, f)
 

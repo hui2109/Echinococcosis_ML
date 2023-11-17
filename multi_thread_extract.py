@@ -38,7 +38,7 @@ def save_data(df, path):
 
 
 def start_extract(index: List[int]):
-    with open('./resources/source_data/finding_list.pkl', 'rb') as f:
+    with open('resources/extract_data/finding_list.pkl', 'rb') as f:
         finding_list = pickle.load(f)
 
     # 初始化存放文件夹
@@ -146,7 +146,7 @@ if __name__ == '__main__':
     logger = logging.getLogger("radiomics")
     logger.setLevel(logging.ERROR)
 
-    with open('./resources/source_data/finding_list.pkl', 'rb') as f:
+    with open('resources/extract_data/finding_list.pkl', 'rb') as f:
         finding_list = pickle.load(f)
         max_length = len(finding_list)
     main(101, list(range(max_length)))

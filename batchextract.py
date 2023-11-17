@@ -21,8 +21,8 @@ def extract_features(img, mask):
     return extractor.execute(img, mask)
 
 
-def batch_extract():
-    with open('./resources/source_data/finding_list.pkl', 'rb') as f:
+def batch_extract(finding_list, save_path):
+    with open(finding_list, 'rb') as f:
         finding_list = pickle.load(f)
 
     df = pd.DataFrame()
@@ -31,12 +31,13 @@ def batch_extract():
         mask = str(results['mask'].resolve(strict=True))
         label = results['label']
         stem = results['stem']
+        print(stem)
 
         # 特征提取
         featureVector = extract_features(img=img, mask=mask)
 
         featureVector['label'] = label
-        featureVector['process_index'] = i
+        # featureVector['process_index'] = i
         featureVector['stem'] = stem
 
         # 将提取的特征转换为DataFrame格式
@@ -45,10 +46,11 @@ def batch_extract():
         df = pd.concat([df, df_new])
 
     # 将提取的特征结果写入文件
-    result_path = pathlib.Path(f'./resources/source_data/results_{int(time.time())}.xlsx')
+    result_path = pathlib.Path(save_path)
     with pd.ExcelWriter(result_path) as writer:
         df.to_excel(writer, index=False)
 
 
 if __name__ == '__main__':
-    batch_extract()
+    # batch_extract('./resources/source_data/finding_list.pkl', f'./resources/source_data/results_{int(time.time())}.xlsx')
+    batch_extract('./resources/source_data/finding_list_2022.pkl', f'./resources/source_data/extract_results_2022_{int(time.time())}.xlsx')

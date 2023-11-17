@@ -14,6 +14,6 @@ for i, process_dir in enumerate(process_dir_list):
     df_tmp = pd.read_excel(result_excel_file)
     df = pd.concat([df, df_tmp])
 
-final_result = Path('./resources/source_data/final_extract_results.xlsx')
+final_result = Path('resources/extract_data/final_extract_results.xlsx')
 with pd.ExcelWriter(final_result) as writer:
     df.to_excel(writer, index=False)
