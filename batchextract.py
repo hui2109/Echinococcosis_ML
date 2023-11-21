@@ -31,7 +31,6 @@ def batch_extract(finding_list, save_path):
         mask = str(results['mask'].resolve(strict=True))
         label = results['label']
         stem = results['stem']
-        print(stem)
 
         # 特征提取
         featureVector = extract_features(img=img, mask=mask)
@@ -53,4 +52,5 @@ def batch_extract(finding_list, save_path):
 
 if __name__ == '__main__':
     # batch_extract('./resources/source_data/finding_list.pkl', f'./resources/source_data/results_{int(time.time())}.xlsx')
-    batch_extract('./resources/source_data/finding_list_2022.pkl', f'./resources/source_data/extract_results_2022_{int(time.time())}.xlsx')
+    # batch_extract('./resources/source_data/finding_list_2022.pkl', f'./resources/source_data/extract_results_2022_{int(time.time())}.xlsx')
+    batch_extract('./resources/extract_data/finding_list_2023.pkl', f'./resources/extract_data/extract_results_2023_{int(time.time())}.xlsx')

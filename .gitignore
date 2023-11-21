@@ -123,7 +123,7 @@ celerybeat.pid
 .env
 .venv
 env/
-venv/
+.venv/
 ENV/
 env.bak/
 venv.bak/
@@ -174,4 +174,6 @@ resources/temp_file/rfe.pkl
 
 resources/converted/
 resources/extract_data/
+resources/external_test_results/
+
 
