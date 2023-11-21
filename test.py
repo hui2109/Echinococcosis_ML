@@ -124,4 +124,12 @@
 # num_list = np.array(num_list)
 # print(np.sum(num_list == 1) / len(num_list))
 
-from utils import get_add_AE_prediction_num
+# from utils import get_add_AE_prediction_num
+
+
+import pandas as pd
+
+p = '/Users/kukudehui/.mounty/阿辉的硬盘/FAE/huis_data/results/results1_合并/Mean/PCA/ANOVA_1/AB/metrics.csv'
+a = pd.read_csv(p, index_col=0)
+b = a.loc['train_Acc'].iloc[0]
+print(type(b), b)
