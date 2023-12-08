@@ -171,10 +171,12 @@ resources/temp_file/y_test.pkl
 resources/temp_file/y_val.pkl
 resources/temp_file/estimator.pkl
 resources/temp_file/rfe.pkl
+resources/temp_file/final_extract_results_2D.pkl
+
 
 resources/converted/
 resources/extract_data/
 resources/external_test_results/
 resources/results/external_test_results/
-
+draw_figures/saved_figs/
 
