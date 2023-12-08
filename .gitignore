@@ -175,5 +175,6 @@ resources/temp_file/rfe.pkl
 resources/converted/
 resources/extract_data/
 resources/external_test_results/
+resources/results/external_test_results/
 
 

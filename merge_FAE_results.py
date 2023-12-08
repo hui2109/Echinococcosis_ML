@@ -54,7 +54,5 @@ def merge_results(root_path: str, save_path: str):
 
 
 if __name__ == '__main__':
-    # merge_results('/Users/kukudehui/.mounty/阿辉的硬盘/FAE/huis_data/results/results1_合并',
-    #               './resources/results/results1_merged.csv')
-    merge_results('/Users/kukudehui/.mounty/阿辉的硬盘/FAE/huis_data/results/results2_合并',
-                  './resources/results/results2_merged.csv')
+    merge_results(r'G:\FAE\huis_data\results\results1_合并',
+                  './resources/results/results1_merged.csv')

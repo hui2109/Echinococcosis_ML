@@ -127,9 +127,75 @@
 # from utils import get_add_AE_prediction_num
 
 
-import pandas as pd
+# import pandas as pd
+#
+# p = '/Users/kukudehui/.mounty/阿辉的硬盘/FAE/huis_data/results/results1_合并/Mean/PCA/ANOVA_1/AB/metrics.csv'
+# a = pd.read_csv(p, index_col=0)
+# b = a.loc['train_Acc'].iloc[0]
+# print(type(b), b)
 
-p = '/Users/kukudehui/.mounty/阿辉的硬盘/FAE/huis_data/results/results1_合并/Mean/PCA/ANOVA_1/AB/metrics.csv'
-a = pd.read_csv(p, index_col=0)
-b = a.loc['train_Acc'].iloc[0]
-print(type(b), b)
+# from batchextract import extract_features
+# import pandas as pd
+#
+# featureVector = extract_features(img='resources/all_images/IMGs/B-0A0A423405A3D3FC2725FD327ACA2DE4.jpg', mask='resources/all_images/MASKs/B-0A0A423405A3D3FC2725FD327ACA2DE4.gif')
+# # 将提取的特征转换为DataFrame格式
+# df_new = pd.DataFrame.from_dict(featureVector.values()).T
+# df_new.columns = featureVector.keys()
+#
+# df_new.to_csv('./hhh1.csv', index=False)
+
+# from PIL import Image
+# import numpy as np
+# import SimpleITK as sitk
+# from SimpleITK import Image as Image2
+
+# i = Image.open('resources/converted/masks_nrrd_2D/B-0A0A423405A3D3FC2725FD327ACA2DE4.nrrd')
+# grey_img_array = np.array(i)
+# print(grey_img_array.shape)
+
+# sitk.ImageFileReader.SetFileName('./resources/converted/masks_nrrd_2D/B-0A0A423405A3D3FC2725FD327ACA2DE4.nrrd')
+# Image2()
+# sitk.GetArrayFromImage()
+
+# import pandas as pd
+#
+# pd.read_excel('./resources/extract_data/final_extract_results_2D.xlsx').to_pickle('./resources/temp_file/final_extract_results_2D.pkl')
+
+# from pathlib import Path
+#
+# p = Path(r'G:\FAE\huis_data\results_dir')
+# for i in range(1, 13):
+#     pp = p / f'Fline{i}'
+#     pp.mkdir(parents=True, exist_ok=True)
+
+# from matplotlib import font_manager
+#
+# print(font_manager.FontManager().ttflist)
+
+
+# import numpy as np
+#
+# file_path = r"F:\肝包虫图片\2023年9月8日包虫考核\考核用图\dataset_voc_AE\SegmentationClass\2014_110006_1.npy"
+# loaded_data = np.load(file_path)
+
+from PIL import Image, ImageChops
+
+# Load the original image and the mask image
+original_image_path = r'F:\肝包虫图片\2023年9月8日包虫考核\考核用图\dataset_voc_CE\JPEGImages\R-2014_165_1.jpg'
+mask_image_path = r'F:\肝包虫图片\2023年9月8日包虫考核\考核用图\dataset_voc_CE\SegmentationClassPNG\R-2014_165_1.png'
+
+original_image = Image.open(original_image_path)
+mask_image = Image.open(mask_image_path)
+
+# Convert mask image to grayscale and threshold it to create a binary mask
+mask_image_gray = mask_image.convert('L')
+binary_mask = mask_image_gray.point(lambda x: 0 if x == 0 else 255, '1')
+
+# Crop the original image using the binary mask
+# Since the mask is green in the image, we should use the green channel as a mask
+masked_image = ImageChops.multiply(original_image.convert('RGB'), binary_mask.convert('RGB'))
+
+# Save the resulting image
+# masked_image.convert('L')
+cropped_image_path = './cropped_image.jpg'
+masked_image.save(cropped_image_path)
