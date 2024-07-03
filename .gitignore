@@ -177,6 +177,8 @@ resources/temp_file/final_extract_results_2D.pkl
 resources/converted/
 resources/extract_data/
 resources/external_test_results/
-resources/results/external_test_results/
+resources/results/external_test/
 draw_figures/saved_figs/
 
+.Rproj.user
+mk_files/

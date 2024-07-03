@@ -8,7 +8,7 @@ import numpy as np
 def get_target_group(group_label, total_data):
     df = pd.DataFrame()
     for label in group_label:
-        df_tmp = total_data[total_data['patient_ID'] == label]
+        df_tmp = total_data[total_data['患者新ID'] == label]
         df = pd.concat([df, df_tmp])
     return df
 
