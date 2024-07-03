@@ -1,0 +1,162 @@
+[1] "################################################################################################"
+[1] "VGG_val_VS_Efficient_val"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 1721 controls (y_true 0) < 2861 cases (y_true 1).
+Area under the curve: 0.9118
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 1721 controls (y_true 0) < 2861 cases (y_true 1).
+Area under the curve: 0.9013
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 2.6792, p-value = 0.007379
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.002810986 0.018130441
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9118059   0.9013352 
+
+[1] "################################################################################################"
+[1] "################################################################################################"
+[1] "VGG_val_VS_Inception_val"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 1721 controls (y_true 0) < 2861 cases (y_true 1).
+Area under the curve: 0.9118
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 1721 controls (y_true 0) < 2861 cases (y_true 1).
+Area under the curve: 0.8745
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 7.7553, p-value = 8.812e-15
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.02791001 0.04678807
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9118059   0.8744568 
+
+[1] "################################################################################################"
+[1] "################################################################################################"
+[1] "VGG_val_VS_ResNet_val"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 1721 controls (y_true 0) < 2861 cases (y_true 1).
+Area under the curve: 0.9118
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 1721 controls (y_true 0) < 2861 cases (y_true 1).
+Area under the curve: 0.8934
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 4.4944, p-value = 6.977e-06
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.01037169 0.02641325
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9118059   0.8934134 
+
+[1] "################################################################################################"
+[1] "################################################################################################"
+[1] "VGG_test_VS_Efficient_test"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 1697 controls (y_true 0) < 2982 cases (y_true 1).
+Area under the curve: 0.9072
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 1697 controls (y_true 0) < 2982 cases (y_true 1).
+Area under the curve: 0.8942
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 3.3101, p-value = 0.0009327
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.005301161 0.020692555
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9071623   0.8941654 
+
+[1] "################################################################################################"
+[1] "################################################################################################"
+[1] "VGG_test_VS_Inception_test"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 1697 controls (y_true 0) < 2982 cases (y_true 1).
+Area under the curve: 0.9072
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 1697 controls (y_true 0) < 2982 cases (y_true 1).
+Area under the curve: 0.8588
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 9.6038, p-value < 2.2e-16
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.03852102 0.05827543
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9071623   0.8587641 
+
+[1] "################################################################################################"
+[1] "################################################################################################"
+[1] "VGG_test_VS_ResNet_test"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 1697 controls (y_true 0) < 2982 cases (y_true 1).
+Area under the curve: 0.9072
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 1697 controls (y_true 0) < 2982 cases (y_true 1).
+Area under the curve: 0.8924
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 3.6076, p-value = 0.000309
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.006750005 0.022809003
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9071623   0.8923828 
+
+[1] "################################################################################################"

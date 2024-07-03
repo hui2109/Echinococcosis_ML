@@ -1,0 +1,648 @@
+"################################################################################################"
+"DL_val_VS_ML_RF_val"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 1721 controls (y_true 0) < 2861 cases (y_true 1).
+Area under the curve: 0.9118
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 1721 controls (y_true 0) < 2861 cases (y_true 1).
+Area under the curve: 0.8727
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 5.8541, p-value = 4.796e-09
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.02601180 0.05219598
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9118059   0.8727020 
+
+"################################################################################################"
+"################################################################################################"
+"DL_val_VS_ML_AE_val"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 1721 controls (y_true 0) < 2861 cases (y_true 1).
+Area under the curve: 0.9118
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 1721 controls (y_true 0) < 2861 cases (y_true 1).
+Area under the curve: 0.8768
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 5.2301, p-value = 1.694e-07
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.02187546 0.04809739
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9118059   0.8768195 
+
+"################################################################################################"
+"################################################################################################"
+"DL_test_VS_ML_RF_test"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 1697 controls (y_true 0) < 2982 cases (y_true 1).
+Area under the curve: 0.9072
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 1697 controls (y_true 0) < 2982 cases (y_true 1).
+Area under the curve: 0.871
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 5.1757, p-value = 2.271e-07
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.02245947 0.04983721
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9071623   0.8710139 
+
+"################################################################################################"
+"################################################################################################"
+"DL_test_VS_ML_AE_test"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 1697 controls (y_true 0) < 2982 cases (y_true 1).
+Area under the curve: 0.9072
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 1697 controls (y_true 0) < 2982 cases (y_true 1).
+Area under the curve: 0.8672
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 5.5648, p-value = 2.624e-08
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.02591277 0.05409033
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9071623   0.8671607 
+
+"################################################################################################"
+"################################################################################################"
+"DL_inves_VS_ML_RF_inves"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9744
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9044
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 1.4886, p-value = 3.561e-09
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.02216498  0.16216498
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9744444   0.9044444 
+
+"################################################################################################"
+"################################################################################################"
+"DL_inves_VS_ML_AE_inves"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9744
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9322
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 1.1769, p-value = 0.0006393
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.02809149  0.11253593
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9744444   0.9322222 
+
+"################################################################################################"
+"################################################################################################"
+"DL_inves_VS_External_junior_E"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9744
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.7483
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 3.5226, p-value = 0.0004274
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.1003021 0.3519201
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9744444   0.7483333 
+
+"################################################################################################"
+"################################################################################################"
+"DL_inves_VS_External_junior_NE"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9744
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.7344
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 3.5471, p-value = 0.0003895
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.1073866 0.3726134
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9744444   0.7344444 
+
+"################################################################################################"
+"################################################################################################"
+"DL_inves_VS_External_middle_E"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9744
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.8167
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 2.6571, p-value = 0.007881
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.04139749 0.27415807
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9744444   0.8166667 
+
+"################################################################################################"
+"################################################################################################"
+"DL_inves_VS_External_middle_NE"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9744
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.7778
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 3.0856, p-value = 0.002032
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.07174372 0.32158961
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9744444   0.7777778 
+
+"################################################################################################"
+"################################################################################################"
+"DL_inves_VS_External_senior_E"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9744
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.8861
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 1.9143, p-value = 0.00558
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.002105416  0.178772083
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9744444   0.8861111 
+
+"################################################################################################"
+"################################################################################################"
+"DL_inves_VS_External_senior_NE"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9744
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.8139
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 2.7456, p-value = 0.006039
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.04594342 0.27516769
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9744444   0.8138889 
+
+"################################################################################################"
+"################################################################################################"
+"ML_RF_inves_VS_External_junior_E"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9044
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.7483
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 1.9532, p-value = 0.000508
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.0005417496  0.3127639718
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9044444   0.7483333 
+
+"################################################################################################"
+"################################################################################################"
+"ML_RF_inves_VS_External_junior_NE"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9044
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.7344
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 2.3804, p-value = 0.0001729
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.03002882 0.30997118
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9044444   0.7344444 
+
+"################################################################################################"
+"################################################################################################"
+"ML_RF_inves_VS_External_middle_E"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9044
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.8167
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 1.306, p-value = 0.00001915
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.0439510  0.2195066
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9044444   0.8166667 
+
+"################################################################################################"
+"################################################################################################"
+"ML_RF_inves_VS_External_middle_NE"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9044
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.7778
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 1.6375, p-value = 0.00001015
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.02494291  0.27827625
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9044444   0.7777778 
+
+"################################################################################################"
+"################################################################################################"
+"ML_RF_inves_VS_External_senior_E"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9044
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.8861
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 0.30889, p-value = 0.7574
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.09799671  0.13466338
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9044444   0.8861111 
+
+"################################################################################################"
+"################################################################################################"
+"ML_RF_inves_VS_External_senior_NE"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9044
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.8139
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 1.219, p-value = 0.0002228
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.05503843  0.23614954
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9044444   0.8138889 
+
+"################################################################################################"
+"################################################################################################"
+"ML_AE_inves_VS_External_junior_E"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9322
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.7483
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 2.5976, p-value = 0.009388
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.04513959 0.32263818
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9322222   0.7483333 
+
+"################################################################################################"
+"################################################################################################"
+"ML_AE_inves_VS_External_junior_NE"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9322
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.7344
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 2.7263, p-value = 0.006405
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.05559255 0.33996300
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9322222   0.7344444 
+
+"################################################################################################"
+"################################################################################################"
+"ML_AE_inves_VS_External_middle_E"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9322
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.8167
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 1.8976, p-value = 0.005774
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.003794641  0.234905752
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9322222   0.8166667 
+
+"################################################################################################"
+"################################################################################################"
+"ML_AE_inves_VS_External_middle_NE"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9322
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.7778
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 2.2529, p-value = 0.02427
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ 0.02007913 0.28880976
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9322222   0.7777778 
+
+"################################################################################################"
+"################################################################################################"
+"ML_AE_inves_VS_External_senior_E"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9322
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.8861
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 0.87759, p-value = 0.3802
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.05687135  0.14909357
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9322222   0.8861111 
+
+"################################################################################################"
+"################################################################################################"
+"ML_AE_inves_VS_External_senior_NE"
+
+Call:
+roc.default(response = y_true, predictor = y_score1)
+
+Data: y_score1 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.9322
+
+Call:
+roc.default(response = y_true, predictor = y_score2)
+
+Data: y_score2 in 30 controls (y_true 0) < 30 cases (y_true 1).
+Area under the curve: 0.8139
+
+	DeLong's test for two correlated ROC curves
+
+data:  roc1 and roc2
+Z = 1.8361, p-value = 0.006635
+alternative hypothesis: true difference in AUC is not equal to 0
+95 percent confidence interval:
+ -0.007984843  0.244651510
+sample estimates:
+AUC of roc1 AUC of roc2 
+  0.9322222   0.8138889 
+
+"################################################################################################"
